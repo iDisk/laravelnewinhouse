@@ -1,0 +1,83 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "PWM API",
+        "description": "Esta es la API REST para las operaciones de la aplicacion Laravel y poder ser compliant",
+        "contact": {
+            "email": "alealg@espaciosmail.com"
+        },
+        "version": "1.0.0"
+    },
+    "host": "pwm.espacios.io",
+    "basePath": "/api/v1",
+    "schemes": [
+        "http",
+        "https"
+    ],
+    "paths": {
+        "/": {
+            "get": {
+                "tags": [
+                    "API Methods"
+                ],
+                "summary": "Version de API REST",
+                "description": "Returns API Version.",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "API V1 Version Standard."
+                    }
+                }
+            }
+        },
+        "/login": {
+            "post": {
+                "tags": [
+                    "Authentication Methods"
+                ],
+                "summary": "General Authentication",
+                "description": "Authentication with username and password",
+                "operationId": "login",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "email",
+                        "in": "query",
+                        "description": "Email of user",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "password",
+                        "in": "query",
+                        "description": "Password for authentication",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Authenticated"
+                    },
+                    "400": {
+                        "description": "Validation failed."
+                    },
+                    "401": {
+                        "description": "Invalid Credentials"
+                    },
+                    "403": {
+                        "description": "User not found/Inactive User"
+                    },
+                    "500": {
+                        "description": "Something went wrong"
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {}
+}

@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="block_notifications">
+        <h4>Estimado {{ isset($data['NOMBRE_DEL_CLIENTE']) ? $data['NOMBRE_DEL_CLIENTE'] : 'CLIENTE' }}</h4>
+        <h5>Número de Cuenta {{ isset($data['ACCOUNT_NUMBER']) ? $data['ACCOUNT_NUMBER'] : 'N/A' }}</h5>
+    </div>
+    <p>El o los saldo(s) aquí presentados no incluyen los pagos parciales realizados durante el período. Para mayor información le invitamos a revisar tu cuenta en <a href="javascript:void(0)">Servicios Online</a></p>
+    <p>Por favor envíe el comprobante de depósito a nuestro Centro de Servicio al Cliente al correo <a href="javascript:void(0)">{{ isset($data['BROKER_EMAIL']) ? $data['BROKER_EMAIL'] : 'hola@atrix.com'  }}</a>, para que podamos agilizar el proceso de compensación.</p>
+    <p>En caso de cualquier duda, por favor contacte a nuestro personal, quienes con gusto le atenderán. Gracias por su confianza</p>
+    <br>
+    <p>Atentamente</p>
+    <p>{{ isset($data['FIRMA_DEL_BROKER']) ? $data['FIRMA_DEL_BROKER'] : 'FIRMA DEL BROKER' }}</p>
+    <p>Consideraciones al crédito otorgado:</p>
+    <p>Le rogamos tener en consideración los tiempos de transferencia internacional para evitar la cancelación del anticipo colateral, transacciones relacionadas, cobro de comisiones, penalizaciones e intereses.</p>
+    <p>Este crédito será únicamente utilizado durante el periodo de tiempo entre la aprobación y la fecha en que el depósito ejecutado por el CLIENTE para cruzar las operaciones con las contrapartes en mercado, sea completado, reconocido y asentado en la(s) cuenta(s) asignada(s) para tal propósito por EL BROKER.</p>
+    <p>El CLIENTE declara estar actuando en su propio nombre y representación, de forma voluntaria y dando fe que lo declarado en la presente solicitud es cierto, especialmente aquello que tiene relación con el origen de los fondos y la información de los mismos. De la misma manera, el cliente declara que los fondos y recursos que utilizará para cubrir este anticipo de colateral no provienen de actividades que puedan ser consideradas ilegales. Declara también que no aceptará que terceras partes depositen fondos derivados de actividades ilegales en su nombre, para cubrir el presente Anticipo de Colateral, y Autoriza a EL BROKER o a cualquier entidad designada por este, pública o privada para la verificación de la identidad, origen y procedencia de los fondos. </p>
+    <p>El presente ANTICIPO DE COLATERAL está siendo otorgado de acuerdo a las condiciones estipuladas en el Acuerdo para la prestación de servicios firmado entre las partes. El CLIENTE deberá considerar especialmente las siguientes condiciones sobre del ANTICIPO DE COLATERAL:</p>
+    <ol type="a">
+        <li>El cliente ha leído y entendido las declaraciones relativas a créditos operativos y anticipos de colateral del contrato entre las partes.</li>
+        <li>Este ANTICIPO DE COLATERAL será utilizado únicamente por EL CLIENTE para realizar operaciones de CONTRATOS POR DIFERENCIA.</li>
+        <li>El CLIENTE no podrá hacer retiros de su(s) CUENTA(s) mientras el ANTICIPO DE DEPÓSITO permanezca abierto.</li>
+        <li>El resultado de las operaciones no estará disponible para EL CLIENTE hasta que la transferencia de fondos sea completado, reconocido y asentado en la(s) cuenta(s) asignada(s) para tal propósito por EL BROKER, siendo el CLIENTE completamente responsable de que el depósito llegue a su destino.</li>
+        <li>El presente ANTICIPO DE COLATERAL será considerado como Capital de Riesgo. En caso de beneficios en las operaciones ejecutadas por el CLIENTE, éstas serán depositadas a la cuenta del mismo, y no serán consideradas como pago el presente ANTICIPO DE COLATERAL, en el caso de existir una pérdida, esto tampoco exime al CLIENTE del pago del mismo.</li>
+        <li>EL CLIENTE entiende que EL BROKER se reserve el derecho de cancelar las operaciones garantizadas con el ANTICIPO DE COLATERAL otorgado, si después de 72 horas de la fecha indicada en el presente documento como fecha de transferencia de fondos, los mismos no estuvieran completado, reconocido y asentado en la(s) cuenta(s) asignada(s) para tal propósito por EL BROKER.</li>
+        <li>g) El CLIENTE libera a EL BROKER de cualquier gasto, costo, reclamación, pasivo o responsabilidad (incluyendo pagos, comisiones y cuotas por el intercambio –swap-) si no cumple con los tiempos y condiciones de la transferencia estipulada en la solicitud efectuada por EL CLIENTE y las condiciones estipuladas en el presente documento.</li>
+        <li>Todos los gastos y costos derivados del presente ANTICIPO DE COLATERAL serán deducidos de la cuenta del cliente.</li>
+        <li>EL BROKER designará en cada ocasión la(s) cuenta(s) a las que el cliente deberá depositar, bien fuera propias o de empresas de corretaje, compensación o intermediación, de conformidad con las características de cada cliente y depósito y en cumplimiento con las normas de compensación electrónica, AML/CFT, y otros factores a considerar a manera enunciativa más no limitativa, tipo de cliente, nacionalidad, antigüedad de la cuenta, monto de depósito, residencia legal, cuenta remitente, actividad de la cuenta del cliente. EL BROKER se reserva el derecho de modificar los datos bancarios para el depósito y de rechazar depósitos que pudieran ser hechos por el cliente sin el consentimiento de EL BROKER.</li>
+        <li>Las empresas de Corretaje, compensación o intermediación designadas por EL BROKER para recibir los fondos del CLIENTE, custodiarán los mismos y podrán (pero no están obligadas a) actuar como como contraparte en las transacciones que ejecute el cliente. EL BROKER se reserva el derecho de contratar los servicios de varias empresas de compensación a fin de salvaguardar los intereses de los clientes y el CLIENTE acepta que EL BROKER puede cambiar la empresa custodia de los fondos del mismo, no afectando el balance que el CLIENTE tuviera con EL BROKER.</li>        
+    </ol>
+    <p>Si necesita ayuda o tiene alguna duda, por favor <strong><u>contacte</u></strong> a uno de nuestros representantes</p>
+    <p></p>
+</div>
